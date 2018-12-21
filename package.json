@@ -2,7 +2,7 @@
   "homepage": "https://katnovoa.github.io/reactnd-project-myreads/",
   "dependencies": {
     "escape-string-regexp": "^1.0.5",
-    "gh-pages": "^2.0.0",
+    "gh-pages": "^2.0.1",
     "hoek": "^6.1.2",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
@@ -10,7 +10,9 @@
     "react-router-dom": "^4.3.1"
   },
   "devDependencies": {
-    "react-scripts": "1.1.4"
+    "react-scripts": "^2.1.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +20,8 @@
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:dev": "webpack-dev-server"
   },
   "browserslist": [
     ">0.2%",
